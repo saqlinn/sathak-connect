@@ -1,53 +1,70 @@
-import { Sparkles, Download } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { Star, Download, Calendar, Monitor, Music, Headphones, ShoppingBag, Trophy } from "lucide-react";
+
+const eventBadges = [
+  { icon: Calendar, label: "5 Days" },
+  { icon: Monitor, label: "Technical" },
+  { icon: Music, label: "Cultural" },
+  { icon: Headphones, label: "DJ Night" },
+  { icon: ShoppingBag, label: "Bazaar" },
+  { icon: Trophy, label: "Grand Finale" }
+];
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
-      
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-background/70" />
-      
-      {/* Animated gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-silver/10 rounded-full blur-3xl animate-float" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-navy">
+      {/* Animated background circle */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-navy-light/50 rounded-full blur-3xl translate-x-1/3 -translate-y-1/4" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-8 animate-fade-up">
-          <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium text-primary">25th Silver Jubilee Celebration</span>
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto py-32">
+        {/* Golden Badge */}
+        <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-gold mb-10 animate-fade-up">
+          <Star className="w-5 h-5 text-background fill-background" />
+          <span className="text-sm font-bold text-background tracking-wider uppercase">25th Silver Jubilee</span>
+          <Star className="w-5 h-5 text-background fill-background" />
         </div>
         
         {/* Main Title */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up animation-delay-100">
-          <span className="text-gradient-silver">SATHAK FEST</span>
-          <span className="text-gradient-neon"> 2025</span>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 animate-fade-up animation-delay-100 tracking-tight">
+          <span className="text-foreground">SATHAK FEST</span>
         </h1>
+        <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 animate-fade-up animation-delay-200">
+          <span className="text-gradient-gold">2025</span>
+        </h2>
+        
+        {/* Divider */}
+        <div className="w-24 h-1 bg-gradient-gold mx-auto mb-8 animate-fade-up animation-delay-200" />
         
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-silver-light mb-4 animate-fade-up animation-delay-200">
-          Mohamed Sathak A.J. College of Engineering
+        <p className="text-xl md:text-2xl text-foreground/90 mb-12 animate-fade-up animation-delay-300">
+          Hosted by Mohamed Sathak A.J. College of Engineering
         </p>
         
-        {/* Description */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-300">
-          5 Days of Cultural, Technical, DJ Night, Bazaar & Grand Outdoor Finale
-        </p>
+        {/* Event Badges */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-10 animate-fade-up animation-delay-400">
+          {eventBadges.map((badge, index) => (
+            <div key={index} className="pill-badge">
+              <badge.icon className="w-5 h-5 text-primary" />
+              <span>{badge.label}</span>
+            </div>
+          ))}
+        </div>
+        
+        {/* Info Banner */}
+        <div className="card-premium py-5 px-8 max-w-3xl mx-auto mb-12 animate-fade-up animation-delay-500">
+          <p className="text-foreground/80 text-lg">
+            Technical • Cultural • DJ Night • Bazaar • Celebrity Performances • Grand Outdoor Stage Event
+          </p>
+        </div>
         
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-400">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-600">
           <a 
             href="#sponsorship" 
             className="btn-primary flex items-center gap-2 group"
           >
-            <Sparkles className="w-5 h-5 transition-transform group-hover:rotate-12" />
+            <Star className="w-5 h-5 transition-transform group-hover:rotate-12 fill-current" />
             Become a Sponsor
           </a>
           <a 
@@ -61,7 +78,7 @@ const HeroSection = () => {
         
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-silver/30 flex items-start justify-center p-2">
+          <div className="w-6 h-10 rounded-full border-2 border-primary/50 flex items-start justify-center p-2">
             <div className="w-1.5 h-3 bg-primary rounded-full animate-pulse" />
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Sparkles, Instagram, Youtube, Linkedin, Twitter } from "lucide-react";
+import { Star, Instagram, Youtube, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,12 +7,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-neon flex items-center justify-center shadow-neon">
-              <Sparkles className="w-5 h-5 text-background" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-gold flex items-center justify-center shadow-gold">
+              <Star className="w-5 h-5 text-background fill-background" />
             </div>
             <div>
               <h3 className="font-bold text-foreground">SATHAK FEST 2025</h3>
-              <p className="text-xs text-muted-foreground">25th Silver Jubilee Celebration</p>
+              <p className="text-xs text-primary">25th Silver Jubilee Celebration</p>
             </div>
           </div>
           

@@ -1,4 +1,4 @@
-import { MessageCircle, Mail, Phone, Clock } from "lucide-react";
+import { Mail, Phone, Clock, Star } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -17,8 +17,8 @@ const CTASection = () => {
           
           {/* Heading */}
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-gradient-silver">Partner</span>
-            <span className="text-gradient-neon"> With Us</span>
+            <span className="text-foreground">Partner</span>
+            <span className="text-gradient-gold"> With Us</span>
           </h2>
           
           {/* Description */}
@@ -30,23 +30,14 @@ const CTASection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a 
-              href="https://wa.me/919876543210" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary flex items-center gap-3 group w-full sm:w-auto justify-center"
-            >
-              <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              WhatsApp Us
-            </a>
-            <a 
               href="mailto:sponsorship@sathakfest.com" 
-              className="btn-outline flex items-center gap-3 group w-full sm:w-auto justify-center"
+              className="btn-primary flex items-center gap-3 group w-full sm:w-auto justify-center"
             >
               <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
               Send Email
             </a>
             <a 
-              href="tel:+919876543210" 
+              href="tel:+916385238788" 
               className="btn-outline flex items-center gap-3 group w-full sm:w-auto justify-center"
             >
               <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -61,11 +52,11 @@ const CTASection = () => {
               Quick Response
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-primary" />
+              <Star className="w-4 h-4 text-primary fill-primary" />
               Flexible Packages
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-silver" />
+              <div className="w-2 h-2 rounded-full bg-primary" />
               Professional Support
             </div>
           </div>

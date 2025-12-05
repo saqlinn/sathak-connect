@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Sparkles, Menu, X } from "lucide-react";
+import { Star, Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -34,12 +34,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-neon flex items-center justify-center shadow-neon group-hover:scale-110 transition-transform">
-              <Sparkles className="w-5 h-5 text-background" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-gold flex items-center justify-center shadow-gold group-hover:scale-110 transition-transform">
+              <Star className="w-5 h-5 text-background fill-background" />
             </div>
             <div className="hidden sm:block">
               <h1 className="font-bold text-foreground text-sm">SATHAK FEST</h1>
-              <p className="text-xs text-muted-foreground">2025</p>
+              <p className="text-xs text-primary">2025</p>
             </div>
           </a>
           
@@ -61,7 +61,7 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <a 
               href="#sponsorship" 
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-neon text-background font-medium text-sm hover:shadow-neon transition-all duration-300"
+              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-gold text-background font-medium text-sm hover:shadow-gold transition-all duration-300"
             >
               Sponsor Now
             </a>
@@ -93,7 +93,7 @@ const Navbar = () => {
               <a 
                 href="#sponsorship" 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-neon text-background font-medium text-sm mt-2"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-gradient-gold text-background font-medium text-sm mt-2"
               >
                 Sponsor Now
               </a>
