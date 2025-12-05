@@ -23,14 +23,14 @@ const BazaarSection = () => {
     <section id="bazaar" className="section-padding relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-silver/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-navy-light/30 rounded-full blur-3xl" />
       
       <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
             <span className="text-primary font-medium tracking-wider uppercase text-sm">Exhibition Zone</span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-gradient-silver">
+            <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-foreground">
               Sathak Bazaar
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
@@ -63,7 +63,7 @@ const BazaarSection = () => {
                 key={index}
                 className="card-premium p-6 text-center group hover:border-primary/50 transition-all duration-500"
               >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-gradient-neon group-hover:shadow-neon transition-all duration-500">
+                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-gradient-gold group-hover:shadow-gold transition-all duration-500">
                   <category.icon className="w-7 h-7 text-primary group-hover:text-background transition-colors" />
                 </div>
                 <h3 className="font-semibold text-foreground">{category.name}</h3>
@@ -78,28 +78,28 @@ const BazaarSection = () => {
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Store className="w-6 h-6 text-primary" />
-                <span className="text-3xl font-bold text-gradient-neon">50+</span>
+                <span className="text-3xl font-bold text-gradient-gold">50+</span>
               </div>
               <p className="text-muted-foreground text-sm">Exhibition Stalls</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Users className="w-6 h-6 text-primary" />
-                <span className="text-3xl font-bold text-gradient-neon">10K+</span>
+                <span className="text-3xl font-bold text-gradient-gold">10K+</span>
               </div>
               <p className="text-muted-foreground text-sm">Daily Visitors</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Zap className="w-6 h-6 text-primary" />
-                <span className="text-3xl font-bold text-gradient-neon">5</span>
+                <span className="text-3xl font-bold text-gradient-gold">5</span>
               </div>
               <p className="text-muted-foreground text-sm">Days Duration</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Rocket className="w-6 h-6 text-primary" />
-                <span className="text-3xl font-bold text-gradient-neon">100%</span>
+                <span className="text-3xl font-bold text-gradient-gold">100%</span>
               </div>
               <p className="text-muted-foreground text-sm">Engagement</p>
             </div>

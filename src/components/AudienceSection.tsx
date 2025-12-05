@@ -33,20 +33,20 @@ const AudienceSection = () => {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-ping" />
-        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-silver rounded-full animate-ping animation-delay-300" />
+        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-foreground/50 rounded-full animate-ping animation-delay-300" />
         <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-primary/50 rounded-full animate-ping animation-delay-500" />
-        <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-silver/50 rounded-full animate-ping animation-delay-200" />
+        <div className="absolute bottom-1/3 right-1/4 w-1.5 h-1.5 bg-foreground/30 rounded-full animate-ping animation-delay-200" />
       </div>
       
       {/* Background gradient orbs */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-silver/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-navy-light/30 rounded-full blur-3xl" />
       
       <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-wider uppercase text-sm">Our Reach</span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-gradient-silver">
+          <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-foreground">
             Audience & Reach
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -62,12 +62,12 @@ const AudienceSection = () => {
               className="card-premium p-8 text-center group hover:border-primary/50 transition-all duration-500"
             >
               {/* Icon */}
-              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-neon flex items-center justify-center group-hover:shadow-neon-lg transition-all duration-500 group-hover:scale-110">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-gold flex items-center justify-center group-hover:shadow-gold-lg transition-all duration-500 group-hover:scale-110">
                 <stat.icon className="w-10 h-10 text-background" />
               </div>
               
               {/* Value */}
-              <div className="text-4xl md:text-5xl font-bold text-gradient-neon mb-2">
+              <div className="text-4xl md:text-5xl font-bold text-gradient-gold mb-2">
                 {stat.value}
               </div>
               
@@ -85,7 +85,7 @@ const AudienceSection = () => {
           <div className="card-premium p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-2xl font-bold text-gradient-silver mb-4">Demographics</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Demographics</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3 text-muted-foreground">
                     <div className="w-2 h-2 rounded-full bg-primary" />
@@ -106,22 +106,22 @@ const AudienceSection = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gradient-silver mb-4">Platform Reach</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Platform Reach</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3 text-muted-foreground">
-                    <div className="w-2 h-2 rounded-full bg-silver" />
+                    <div className="w-2 h-2 rounded-full bg-primary" />
                     Instagram: 50,000+ followers
                   </li>
                   <li className="flex items-center gap-3 text-muted-foreground">
-                    <div className="w-2 h-2 rounded-full bg-silver" />
+                    <div className="w-2 h-2 rounded-full bg-primary" />
                     YouTube: Event documentation
                   </li>
                   <li className="flex items-center gap-3 text-muted-foreground">
-                    <div className="w-2 h-2 rounded-full bg-silver" />
+                    <div className="w-2 h-2 rounded-full bg-primary" />
                     WhatsApp: Direct community reach
                   </li>
                   <li className="flex items-center gap-3 text-muted-foreground">
-                    <div className="w-2 h-2 rounded-full bg-silver" />
+                    <div className="w-2 h-2 rounded-full bg-primary" />
                     Local media coverage
                   </li>
                 </ul>

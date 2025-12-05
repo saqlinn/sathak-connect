@@ -6,9 +6,9 @@ const plans = [
     price: "₹25,000",
     icon: Medal,
     popular: false,
-    gradient: "bg-gradient-to-br from-silver/20 to-silver/5",
-    iconBg: "bg-silver/20",
-    iconColor: "text-silver",
+    gradient: "bg-gradient-to-br from-foreground/10 to-foreground/5",
+    iconBg: "bg-foreground/20",
+    iconColor: "text-foreground",
     features: [
       "Logo in sponsor acknowledgement page",
       "One sponsor post on social media",
@@ -22,9 +22,9 @@ const plans = [
     price: "₹50,000",
     icon: Award,
     popular: false,
-    gradient: "bg-gradient-to-br from-yellow-500/20 to-yellow-600/5",
-    iconBg: "bg-yellow-500/20",
-    iconColor: "text-yellow-400",
+    gradient: "bg-gradient-to-br from-primary/20 to-primary/5",
+    iconBg: "bg-primary/20",
+    iconColor: "text-primary",
     features: [
       "Logo on posters & digital banners",
       "One stage announcement",
@@ -40,7 +40,7 @@ const plans = [
     icon: Crown,
     popular: true,
     gradient: "bg-gradient-to-br from-primary/30 to-primary/5",
-    iconBg: "bg-gradient-neon",
+    iconBg: "bg-gradient-gold",
     iconColor: "text-background",
     features: [
       "Free stall access at Sathak Bazaar",
@@ -61,13 +61,13 @@ const SponsorshipPlans = () => {
     <section id="sponsorship" className="section-padding bg-gradient-dark relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl translate-x-1/2" />
-      <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-silver/5 rounded-full blur-3xl -translate-x-1/2" />
+      <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-navy-light/30 rounded-full blur-3xl -translate-x-1/2" />
       
       <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-wider uppercase text-sm">Pricing</span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-gradient-silver">
+          <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-foreground">
             Sponsorship Plans
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -87,7 +87,7 @@ const SponsorshipPlans = () => {
               {/* Popular Badge */}
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <div className="flex items-center gap-1 px-4 py-1.5 bg-gradient-neon rounded-full shadow-neon">
+                  <div className="flex items-center gap-1 px-4 py-1.5 bg-gradient-gold rounded-full shadow-gold">
                     <Star className="w-4 h-4 text-background fill-background" />
                     <span className="text-sm font-bold text-background">Most Popular</span>
                   </div>
@@ -104,7 +104,7 @@ const SponsorshipPlans = () => {
               
               {/* Price */}
               <div className="text-center mb-6">
-                <span className="text-4xl font-bold text-gradient-neon">{plan.price}</span>
+                <span className="text-4xl font-bold text-gradient-gold">{plan.price}</span>
               </div>
               
               {/* Features */}
@@ -125,7 +125,7 @@ const SponsorshipPlans = () => {
                 className={`block w-full text-center py-4 rounded-full font-semibold transition-all duration-300 ${
                   plan.popular 
                     ? 'btn-primary' 
-                    : 'border border-silver/30 text-foreground hover:bg-silver/10'
+                    : 'border border-primary/30 text-foreground hover:bg-primary/10'
                 }`}
               >
                 Get Started

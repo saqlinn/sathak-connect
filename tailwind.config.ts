@@ -22,10 +22,10 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        silver: "hsl(var(--silver))",
-        "silver-light": "hsl(var(--silver-light))",
-        "neon-blue": "hsl(var(--neon-blue))",
-        "neon-blue-glow": "hsl(var(--neon-blue-glow))",
+        gold: "hsl(var(--gold))",
+        "gold-light": "hsl(var(--gold-light))",
+        navy: "hsl(var(--navy))",
+        "navy-light": "hsl(var(--navy-light))",
         "dark-surface": "hsl(var(--dark-surface))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -85,8 +85,8 @@ export default {
           "50%": { transform: "translateY(-20px)" },
         },
         "glow-pulse": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(200 100% 50% / 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsl(200 100% 50% / 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(45 100% 50% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsl(45 100% 50% / 0.6)" },
         },
         "shimmer": {
           "0%": { backgroundPosition: "-200% 0" },

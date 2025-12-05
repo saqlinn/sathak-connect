@@ -5,13 +5,13 @@ const ContactSection = () => {
     <section id="contact" className="section-padding bg-gradient-dark relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2" />
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-silver/5 rounded-full blur-3xl translate-x-1/2" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-navy-light/30 rounded-full blur-3xl translate-x-1/2" />
       
       <div className="container mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-medium tracking-wider uppercase text-sm">Get In Touch</span>
-          <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-gradient-silver">
+          <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6 text-foreground">
             Contact Details
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -22,33 +22,33 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info Cards */}
           <div className="space-y-6">
-            {/* Event Coordinator */}
+            {/* Coordinator 1 */}
             <div className="card-premium p-6 flex items-start gap-4 group hover:border-primary/50 transition-all duration-500">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-neon group-hover:shadow-neon transition-all duration-500">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-gold group-hover:shadow-gold transition-all duration-500">
                 <User className="w-7 h-7 text-primary group-hover:text-background transition-colors" />
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">Event Coordinator</h3>
-                <p className="text-muted-foreground">Mr. Rajesh Kumar</p>
-                <p className="text-muted-foreground text-sm">Sponsorship & Partnerships Lead</p>
+                <p className="text-primary font-medium">Saqlin Mustaq M</p>
+                <a href="tel:+916385238788" className="text-muted-foreground hover:text-primary transition-colors">+91 6385238788</a>
               </div>
             </div>
             
-            {/* Phone */}
+            {/* Coordinator 2 */}
             <div className="card-premium p-6 flex items-start gap-4 group hover:border-primary/50 transition-all duration-500">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-neon group-hover:shadow-neon transition-all duration-500">
-                <Phone className="w-7 h-7 text-primary group-hover:text-background transition-colors" />
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-gold group-hover:shadow-gold transition-all duration-500">
+                <User className="w-7 h-7 text-primary group-hover:text-background transition-colors" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                <a href="tel:+919876543210" className="text-primary hover:underline">+91 98765 43210</a>
-                <p className="text-muted-foreground text-sm">Available 9 AM - 6 PM IST</p>
+                <h3 className="font-semibold text-foreground mb-1">Event Coordinator</h3>
+                <p className="text-primary font-medium">Prasanna</p>
+                <a href="tel:+916379630025" className="text-muted-foreground hover:text-primary transition-colors">+91 6379630025</a>
               </div>
             </div>
             
             {/* Email */}
             <div className="card-premium p-6 flex items-start gap-4 group hover:border-primary/50 transition-all duration-500">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-neon group-hover:shadow-neon transition-all duration-500">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-gold group-hover:shadow-gold transition-all duration-500">
                 <Mail className="w-7 h-7 text-primary group-hover:text-background transition-colors" />
               </div>
               <div>
@@ -62,7 +62,7 @@ const ContactSection = () => {
           {/* Address & Map Card */}
           <div className="card-premium p-8">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 rounded-xl bg-gradient-neon flex items-center justify-center shadow-neon">
+              <div className="w-14 h-14 rounded-xl bg-gradient-gold flex items-center justify-center shadow-gold">
                 <Building className="w-7 h-7 text-background" />
               </div>
               <div>
